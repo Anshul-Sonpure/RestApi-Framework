@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
+
     <Appenders>
+
+        <!-- Console Appender -->
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout
                     pattern="%d{HH:mm:ss} %-5level %c{1} - %msg%n"/>
         </Console>
+
+        <!-- File Appender -->
+        <RollingFile
+                name="FileLogger"
+                fileName="logs/application.log"
+                filePattern="logs/application-%d{yyyy-MM-dd}-%i.log">
+
+            <PatternLayout
+                    pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %c{1} - %msg%n"/>
+
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
     </Appenders>
 
     <Loggers>
@@ -12,17 +32,21 @@
         <!-- Suppress TestNG internal INFO logs -->
         <Logger name="org.testng" level="WARN" additivity="false">
             <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileLogger"/>
         </Logger>
 
-        <!-- Suppress RestAssured internal INFO logs if needed -->
+        <!-- Suppress RestAssured internal INFO logs -->
         <Logger name="io.restassured" level="WARN" additivity="false">
             <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileLogger"/>
         </Logger>
 
-        <!-- Root logger -->
+        <!-- Root Logger -->
         <Root level="INFO">
             <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileLogger"/>
         </Root>
 
     </Loggers>
+
 </Configuration>

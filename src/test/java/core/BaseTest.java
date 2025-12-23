@@ -19,6 +19,8 @@ public class BaseTest {
         RestAssured.baseURI = ConfigManager.getTestBaseUrl();
         RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
         RestAssured.filters(new RequestLoggingFilter(),new ResponseLoggingFilter());
-        log.info("Log4j2 is active");
+        log.info("==== Test Suite Started ====");
+        log.info("Environment: {}", ConfigManager.getEnv("env"));
+        log.info("Base URL: {}", ConfigManager.getTestBaseUrl());
     }
 }

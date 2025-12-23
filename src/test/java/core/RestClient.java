@@ -70,6 +70,7 @@ public final class RestClient {
                 .body(payload)
                 .when()
                 .patch(endpoint);
+
     }
     public static Response delete(String endpoint, RequestOptions options) {
         return buildRequestSpecification(options)
