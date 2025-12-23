@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes" thread-count="4">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/AnshulSonpure/IdeaProjects/restAssured/RestAssured/src/test/java/testScripts/DeleteTest.java">
+        <classes>
+            <class name="testScripts.DeleteTest">
+                <methods>
+                    <include name="deletePostById"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/AnshulSonpure/IdeaProjects/restAssured/RestAssured/src/test/java/testScripts/GetTests.java">
+        <classes>
+            <class name="testScripts.GetTests">
+                <methods>
+                    <include name="getPosts"/>
+                    <include name="getPostById"/>
+                    <include name="getPostByComments"/>
+                    <include name="getComments"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/AnshulSonpure/IdeaProjects/restAssured/RestAssured/src/test/java/testScripts/PatchTest.java">
+        <classes>
+            <class name="testScripts.PatchTest">
+                <methods>
+                    <include name="patchRequest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/AnshulSonpure/IdeaProjects/restAssured/RestAssured/src/test/java/testScripts/PostTests.java">
+        <classes>
+            <class name="testScripts.PostTests">
+                <methods>
+                    <include name="createPost"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/AnshulSonpure/IdeaProjects/restAssured/RestAssured/src/test/java/testScripts/PutTest.java">
+        <classes>
+            <class name="testScripts.PutTest">
+                <methods>
+                    <include name="putRequest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
