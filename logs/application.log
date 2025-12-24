@@ -1,0 +1,23 @@
+2025-12-24 12:17:01 INFO  ConfigManager - Unable to load test-config.properties from classpath
+2025-12-24 12:17:43 INFO  BaseTest - ==== Test Suite Started ====
+2025-12-24 12:17:43 INFO  BaseTest - Environment: qa
+2025-12-24 12:17:43 INFO  BaseTest - Base URL: https://jsonplaceholder.typicode.com
+2025-12-24 12:25:44 INFO  BaseTest - ==== Test Suite Started ====
+2025-12-24 12:25:45 INFO  BaseTest - Environment: qa
+2025-12-24 12:25:45 INFO  BaseTest - Base URL: https://jsonplaceholder.typicode.com
+2025-12-24 12:25:45 INFO  BaseTest - Test execution started
+2025-12-24 12:25:47 INFO  BaseTest - Test execution started
+2025-12-24 12:25:47 INFO  BaseTest - Test execution started
+2025-12-24 12:25:48 INFO  BaseTest - Test execution started
+2025-12-24 12:25:48 INFO  BaseTest - Test execution started
+2025-12-24 12:25:48 INFO  BaseTest - Test execution started
+2025-12-24 12:25:49 INFO  BaseTest - Test execution started
+2025-12-24 12:25:50 INFO  BaseTest - Test execution started
+2025-12-24 12:30:06 INFO  BaseTest - ==== Test Suite Started ====
+2025-12-24 12:30:06 INFO  BaseTest - Environment: qa
+2025-12-24 12:30:06 INFO  BaseTest - Base URL: https://jsonplaceholder.typicode.com
+2025-12-24 12:30:06 INFO  DeleteTest - Executing test logic
+2025-12-24 12:30:08 INFO  GetTests - Executing test logic
+2025-12-24 12:30:17 INFO  PatchTest - Executing test logic
+2025-12-24 12:30:18 INFO  PostTests - Executing test logic
+2025-12-24 12:30:19 INFO  PutTest - Executing test logic

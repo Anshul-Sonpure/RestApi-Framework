@@ -6,7 +6,7 @@ import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.response.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.*;
 
 public class BaseTest {
 
@@ -23,4 +23,5 @@ public class BaseTest {
         log.info("Environment: {}", ConfigManager.getEnv("env"));
         log.info("Base URL: {}", ConfigManager.getTestBaseUrl());
     }
+
 }
